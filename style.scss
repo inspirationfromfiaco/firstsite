@@ -1,0 +1,134 @@
+@import 'nulls';
+//Ievietoju nulles
+
+body{
+background-color: #e8e8e8; //Uzstādiju krāsu mājaslapai.
+}
+
+
+.Saturs{
+text-align: center;
+
+}
+
+
+.VirsrakstsUnZemraksts{
+margin: 168px 0 87px 0;  //IEdevu bloka atkāpi no augšas un nākoša bloka atkāpi no apakšas!
+
+& .travel{               //Izmantoju "&" funkciju lai nebūtu jāraksta .VirsrakstsUnZemraksts !!!
+opacity: 0.6;
+color: #273d46;
+font-family: "Arial MT";
+font-size: 14px;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 2.8px;
+padding: 0 0 28px 0;
+  }
+
+& .Donec{               // tas pats ,kas arī iepriekš :) !
+color: #273d46;
+font-family: "Times New Roman PSMT";
+font-size: 36px;
+text-align: center;
+  }
+}
+
+
+.Picture{
+  text-align: center;
+  margin:0 0 107px 0; //atstarpe nākošajam blokam...
+  background: url('pic/picture.jpg') no-repeat;   //ielieku iekšā bildi
+  height: 521px;
+  max-width: 100%;
+  background-position: 50% 50%;  //AR ŠO BIEŽI VIEN ČAKARĒJOS, TĀPEC IR JĀIEGAUMĒ ,KA LAI BILDE BŪTU ADAPTĪVA JEBKURĀ BRAUZĒRĪ UN LAI TĀ BŪTU PA VIDU LAPAI ,TAD IR JĀIZMANTO ŠIS PIERAKSTS!!!!!!!!!!!!!!!!!!!
+}
+
+
+.DiviParagrafi{
+  opacity: 0.8;
+  color: #273d46;
+  font-family: "Times New Roman PSMT";
+  font-size: 24px;
+  text-align: left;
+  display: inline-block;
+  margin: 0 0 64px 20px;
+
+  & >p{
+margin: 0 0 40px 0;
+  }
+}
+
+
+.list{
+  text-align: left;
+  margin: 0 0 59px 200px;
+
+
+& ul{
+  :nth-child(1){
+margin: 0 0 15px 0;
+text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+color: #273d46;
+font-family: "Arial MT";
+font-size: 20px;
+background: url('../SomeSCSS/pic/check.png') no-repeat;
+padding: 0 0 0 25px;
+
+}
+  }
+
+
+  & ul{
+    :nth-child(2){
+margin: 0 0 15px 0;
+color: #80b7b3;
+font-family: "Arial MT";
+font-size: 20px;
+font-style: italic;
+background: url('../SomeSCSS/pic/check.png') no-repeat;
+padding: 0 0 0 25px;
+  }
+    }
+
+
+    & ul{
+      :nth-child(3){
+margin: 0 0 15px 0;
+color: #273d46;
+font-family: "Arial MT";
+font-size: 20px;
+font-weight: bold;
+background: url('../SomeSCSS/pic/check.png') no-repeat;
+padding: 0 0 0 25px;
+    }
+      }
+
+      & ul{
+        :nth-child(4){
+margin: 0 0 15px 0;
+opacity: 0.3;
+color: #273d46;
+font-family: "Arial MT";
+font-size: 20px;
+text-decoration: line-through;
+background: url('../SomeSCSS/pic/check.png') no-repeat;
+padding: 0 0 0 25px;
+      }
+        }
+}
+
+
+.poga{
+  margin: 0 0 137px 0;
+  color: #ffffff;
+  font-family: "Arial MT";
+  font-size: 14px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  display: inline-block;
+  background-color: #80b7b3;
+  padding: 8px 20px;
+  border-radius: 15px;
+}
